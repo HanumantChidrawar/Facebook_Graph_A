@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <title>Facebook Graph API</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="Facebook_Graph_Api.css">
+
+  </head>
+
+  <body>
+
+  <!---Heading -->
+    <section class="container-fluid" style="background-color:#4267B2">
+      <div class="jumbotron" style="margin-bottom:0">
+        <h1>Facebook Graph API</h1>
+        <p>Little Demonstration of using graph API.</p>
+      </div>
+    </section>
+
+  <!-- Token Generation Section -->
+  <section class="container-fluid parallax-window" data-parallax="scroll" data-image-src="Nature1.jpg">
+
+      <div class="Generate-token">
+
+        <h2>First Generate an Access Token</h2>
+        <a href="https://developers.facebook.com/tools-and-support/" class="btn btn-primary" data-toggle="tooltip" title="Generate access token for email, hometown, education, work, cover picture & posts." target="_blank"><i class="fa fa-facebook fa-2x fa-pull-left"> Get Token</i></a>  <!--Button to get the Access token -->
+
+     </div>
+
+     <form class="form access-token"> <!--In-line form to pass the Access token to function -->
+        <div class="form-group row">
+          <label class="col-12 col-md-4" for="token">Access Token:</label>
+          <input type="text" class="form-control col-12 col-md-4" id="token" placeholder="Paste Access Token">
+          <button type="button" class="btn btn-primary col-12 col-md-4" id="go">Show Basic Data</button> <!-- Clicking this button triggers the function -->
+        </div>
+     </form>
+
+  </section>
+
+    <!-- Display Data -->
+  <section class="container-fluid parallax-window " data-parallax="scroll" data-image-src="Nature2.jpg"> <!-- -This section uses parallax.js effect-->
+
+    <section class="container display-data " >
+
+      <div class="row">
+        <div class="col-12" id="cover">
+
+        </div>
+        <div id="profile_photo" class="col-12 col-md-4" style="margin-top: 2%">
+
+        </div>
+
+        <div class="card col-12 col-md-8" style="margin-top: 2%">
+          <div class="card-body">
+            <div class="row about">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="feed">
+	    <!--<a class="btn btn-primary" id="myFeed" href="#">Click to see My Feed</a>-->
+
+	  </div>
+ </section>
+
+
+    <!--BootStrap's requird scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> <!-- Jquery CDN-->
+    <script src="facebook-api.js"></script><!--Jquery function to fetch facebook basic data. -->
+    <script src="parallax.js-1.5.0/parallax.min.js"></script>  <!--parallax.js -->
+    <!-- FontAwesome Library-->
+    <script src="https://use.fontawesome.com/c6253b14f7.js"></script>
+  </body>
+</html>
